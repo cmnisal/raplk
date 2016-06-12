@@ -1,12 +1,3 @@
-/**
- * jquery.gallery.js
- * http://www.codrops.com
- *
- * Copyright 2011, Pedro Botelho / Codrops
- * Free to use under the MIT license.
- *
- * Date: Mon Jan 30 2012
- */
 
 (function( $, undefined ) {
 	
@@ -23,7 +14,7 @@
 	$.Gallery.defaults 		= {
 		current		: 0,	// index of current item
 		autoplay	: false,// slideshow on / off
-		interval	: 2000  // time between transitions
+		interval	: 5000  // time between transitions
     };
 	
 	$.Gallery.prototype 	= {
