@@ -19,13 +19,16 @@ a{text-decoration:none;}
 .underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
 nav.vertical ul li{	display:block;}/* vertical menu */
 nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+
 img{max-width:100%;}
 /*end reset*/
 body {
 	 font-family:"arial", verdana Helvetica, sans-serif;
 }
 
-
+.menumob{
+	display:none;
+}
 .audiolist{
 	color: #FFFFFF;
 	background-color: #202020;
@@ -55,6 +58,9 @@ a{
 	color: #FFFFFF;
 }	
 	
+.sectionM{
+	display: none;
+}	
 .wrap{
 	width: 100%;
 	background-color:#303030;
@@ -85,12 +91,12 @@ width: auto\9; /* ie8 */
 /*menu-bg*/
 .menu-bg,.footer-bg{
 	background: rgb(51,51,51); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(51,51,51,1) 25%, rgba(34,34,34,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,rgba(51,51,51,1)), color-stop(100%,rgba(34,34,34,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(51,51,51,1) 25%,rgba(34,34,34,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(51,51,51,1) 25%,rgba(34,34,34,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(51,51,51,1) 25%,rgba(34,34,34,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(51,51,51,1) 25%,rgba(34,34,34,1) 100%); /* W3C */
+	background: -moz-linear-gradient(top,  rgba(28,28,28,1) 25%, rgba(34,34,34,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,rgba(28,28,28,1)), color-stop(100%,rgba(34,34,34,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(28,28,28,1) 25%,rgba(34,34,34,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(28,28,28,1) 25%,rgba(34,34,34,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(28,28,28,1) 25%,rgba(34,34,34,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(28,28,28,1) 25%,rgba(34,34,34,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#222222',GradientType=0 ); /* IE6-9 */
 }
 .menu{
@@ -385,13 +391,7 @@ box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.7),
 	float: right;
 	width:21.33%;
 }
-
-
-
-
-
-
-
+/*  GRID OF THREE   ============================================================================= */
 .section {
 	clear: both;
 	padding: 0px;
@@ -406,17 +406,18 @@ box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.7),
     clear:both;
 }
 .group {
+	margin-left:2%;
     zoom:1;
 }
 .grid_1_of_3{
 	display: block;
 	float:left;
-	margin: 1% 0 1% 1.6%;
+	margin: 1% 0 1%;
 }
 .images_1_of_3 {
-	width: 11em;
-	padding-left:1.5%; 
-	padding-right:0.3em;
+	width: 23%;
+	padding-left:1%%; 
+	padding-right:1%;
 	height: 12em;
 }
 .images_1_of_3  img ,.images_3_of_1 img ,.images_1_of_2 img ,.det-pic img,.item img,.grid-img1 img{
@@ -426,7 +427,8 @@ box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.7),
 	box-shadow: 0px 0px 10px #999;
 	max-width:100%;
 	display:block;
-	height: 7.5em;
+	height: 8.5em;
+	border-radius: 6px;
 }
 .images_1_of_3  img:hover,.images_3_of_1 img:hover,.images_1_of_2 img:hover,.det-pic img:hover,.item img:hover,.grid-img1 img:hover{
 	background: rgb(0, 0, 0);
@@ -444,11 +446,6 @@ box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.7),
 	color: #555;
 	line-height: 1.8em;
 }
-
-
-
-/*  GRID OF THREE   ============================================================================= */
-
 /***** Media Quries ****
 @media only screen and (max-width: 1024px) {
 	.wrap{
@@ -566,11 +563,12 @@ box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.7),
 }
 /*footer-style*/
 /*  GRID OF Four   ============================================================================= */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-}
+.sectionD{
+		
+		max-width: 100%;
+				
+	}
+
 .group:before,
 .group:after {
     content:"";
@@ -1280,7 +1278,7 @@ GO FULL WIDTH AT LESS THAN 640 PIXELS *
  *  */
    @media only screen
    
-   and (max-device-width : 480px){  
+   and (max-device-width : 450px){  
    	
    	
    	.slider-bg{ display: none;}
@@ -1353,19 +1351,20 @@ GO FULL WIDTH AT LESS THAN 640 PIXELS *
     clear:both;
 }
 .group {
+	margin-left:0%;
     zoom:1;
 }
 .grid_1_of_3{
 	display: block;
-	float:right;
-	margin: 11% 2px 0% -1.2%;
+	float:right``;
+	margin: 1% 1px 0% -1.2%;
 	margin-bottom: 11%;
 }
 .images_1_of_3 {
-	width: 5em;
+	width: 7em;
 	padding-left:1.5%; 
 	padding-right:0.3em;
-	height: 4em;
+	height: 5em;
 }
 .images_1_of_3  img ,.images_3_of_1 img ,.images_1_of_2 img ,.det-pic img,.item img,.grid-img1 img{
 	cursor:pointer;
@@ -1375,6 +1374,7 @@ GO FULL WIDTH AT LESS THAN 640 PIXELS *
 	max-width:90%;
 	display:block;
 	height:80%;
+	border-radius:0px;
 }
 .images_1_of_3  img:hover,.images_3_of_1 img:hover,.images_1_of_2 img:hover,.det-pic img:hover,.item img:hover,.grid-img1 img:hover{
 	background: rgb(0, 0, 0);
@@ -1401,8 +1401,23 @@ GO FULL WIDTH AT LESS THAN 640 PIXELS *
 	font-size: 10px;
 	color:#02acb8;
 	
-}
-
+	}
+	
+	.menu{
+		display: none;
+	}
+	
+	.menumob{
+		display: block;
+	}
+	.sectionD{
+		
+		display: none;
+				
+	}
+	.sectionM{
+		display: inline;
+	}
    
 }
    
@@ -1422,133 +1437,7 @@ GO FULL WIDTH AT LESS THAN 640 PIXELS *
     * 
     */
 
-   @media only screen and (max-device-width : 1024px)
-   
-   and (min-device-width : 800px){  
-   	
-   	
-   	.slider-bg{ display: none;}
-   
-   .audiolist{
-	color: #FFFFFF;
-	
-	padding-bottom: 1%;
-	padding-top:1%;
-	float : left;
-	
-	
-	
-	background: rgb(51,51,51); 
-	background: -moz-linear-gradient(top,  rgb(16, 15, 15) 25%, rgb(78, 76, 76) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,rgb(16, 15, 15)), color-stop(100%,rgb(78, 76, 76))); 
-	background: -o-linear-gradient(top,  rgb(16, 15, 15) 25%,rgb(78, 76, 76) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgb(16, 15, 15) 25%,rgb(78, 76, 76) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgb(16, 15, 15) 25%,rgb(78, 76, 76) 100%); /* W3C */
-	}
-	
-   
-   .downloads{
-		    margin-left: 2em;
-	}
 
-   
-   .logoBanner{
-	height:4em; 
-	width: 100%; 
-	}
-   
-   .nav li.active{
-	background-color: #02ACB8;
-}
-.nav li a {
-	letter-spacing:1px;
-	font-family: 'Julius Sans One', sans-serif;
-	color: #FFFFFF;
-	font-size: 1.24em;
-	display: block;
-	float: left;
-	font-weight: normal;
-	padding:0.5em 1em;
-	position: relative;
-	text-decoration: none;
-}
-.nav li:hover > a {
-    color: #fefefe;
-    background: #029DA7;
-}
-.nav li:hover, .nav a:focus, .nav a:hover, .nav a:active{
-	background: #029DA7;
-    outline: 0 none;
-}
-   
-   
-   /*  GRID OF THREE   ============================================================================= */
-.section {
-	clear: both;
-	padding: 0px;
-	margin-left: 0.2em;
-}
-.group:before,
-.group:after {
-    content:"";
-    display:table;
-}
-.group:after {
-    clear:both;
-}
-.group {
-    zoom:1;
-}
-.grid_1_of_3{
-	display: block;
-	float:right;
-	margin: 1% 1px 0% -1.2%;
-	margin-bottom: 11%;
-}
-.images_1_of_3 {
-	width: 7em;
-	padding-left:1.5%; 
-	padding-right:0.3em;
-	height: 5em;
-}
-.images_1_of_3  img ,.images_3_of_1 img ,.images_1_of_2 img ,.det-pic img,.item img,.grid-img1 img{
-	cursor:pointer;
-	background: #fff;
-	padding: 1px;
-	box-shadow: 0px 0px 5px #999;
-	max-width:90%;
-	display:block;
-	height:80%;
-}
-.images_1_of_3  img:hover,.images_3_of_1 img:hover,.images_1_of_2 img:hover,.det-pic img:hover,.item img:hover,.grid-img1 img:hover{
-	background: rgb(0, 0, 0);
-}
-.images_1_of_3  h3,.span_2_of_3  h3,.det-para h3,.images_1_of_2  h3,.contact_info h3,.company_address h3 ,.span_2_of_4  h3,.single h3{
-	color:#fff;
-	margin-top:0.3em;
-	margin-bottom:auto;
-	font-size:12px;
-	
-}
-.images_1_of_3  p ,.span_2_of_3  p,.det-para p,.images_1_of_2  p,.single p{
-	font-size:0.8425em;
-	padding:0.2em 0 0.8em; 
-	color: #555;
-	line-height: 1.8em;
-}
-   .upcommingbr{
-   	display: none;
-   }
-   
-   
-   .artists{
-	font-size: 10px;
-	color:#02acb8;
-	
-}
-
-   
-}
 
 
 
